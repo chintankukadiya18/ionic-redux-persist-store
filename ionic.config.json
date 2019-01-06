@@ -1,0 +1,7 @@
+{
+  "name": "ionic-redux-persist-store",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

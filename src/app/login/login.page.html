@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-row>
+  <ion-col>
+    <ion-list inset>
+      <ion-item>
+        <ion-input placeholder="Username" type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Password" type="password" required [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <div *ngIf="error" class="alert alert-danger">Invalid Credentials</div>
+    <button ion-button class="submit-btn" full (click)="login()">
+      Login
+    </button>
+  </ion-col>
+</ion-row>
+
+</ion-content>
